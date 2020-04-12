@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 export default () =>
-    <div id="work">
+    <div id="writing">
         <hr className="m-5 double" />
-        <h1 className="display-2">My Work</h1>
+        <h1 className="display-2">My Writing</h1>
         <h2>
             Fiction
           </h2>

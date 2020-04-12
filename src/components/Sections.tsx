@@ -2,15 +2,15 @@ import * as React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
-import Work from './Work';
+import Writing from './Writing';
 
 export default () =>
     <Switch>
         <Route path="/about">
             <About />
         </Route>
-        <Route path="/work">
-            <Work />
+        <Route path="/writing">
+            <Writing />
         </Route>
         <Route path="/contact">
             <Contact />
