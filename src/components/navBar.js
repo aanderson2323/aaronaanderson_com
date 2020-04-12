@@ -1,20 +1,20 @@
 import React from 'react'
-
-export const NavBar = (props) => {
-    return (
-            <ul id="nav" class="nav nav-pills nav-stacked fixed-top" data-offset-top="0">
-                <li>
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#work">My Work</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-    )
+import { Link } from 'react-router-dom';
+export const NavBar = () => {
+    return <>
+        <ul id="nav">
+            <li>
+                <Link to="/">Home</Link>
+            </li>
+            <li>
+                <Link to="/about">About</Link>
+            </li>
+            <li>
+                <Link to="/work">My Work</Link>
+            </li>
+            <li>
+                <Link to="/contact">Contact</Link>
+            </li>
+        </ul>
+    </>;
 }
