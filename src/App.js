@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import {NavBar} from './components/navBar'
 
-class App extends Component {
-  render() {
-    return (
+const App = props =>
+(
       <div classNameName="App">
         <div className="row">
           <div className="col-md-3 col-lg-2 col-xl-1">
@@ -52,7 +51,5 @@ class App extends Component {
         </div>
       </div>
     )
-  }
-}
 
 export default App;
