@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 export default () => <div id="contact">
     <hr className="m-5 double" />

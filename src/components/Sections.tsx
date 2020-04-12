@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
@@ -17,6 +17,5 @@ export default () =>
         </Route>
         <Route path="/">
             <hr/>
-            <h1>Welcome!</h1>
         </Route>
     </Switch>;
