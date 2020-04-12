@@ -15,4 +15,8 @@ export default () =>
         <Route path="/contact">
             <Contact />
         </Route>
+        <Route path="/">
+            <hr/>
+            <h1>Welcome!</h1>
+        </Route>
     </Switch>;
