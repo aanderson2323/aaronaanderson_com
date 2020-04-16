@@ -1,5 +1,6 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
+
 module.exports = {
     mode: "production",
 
@@ -43,9 +44,11 @@ module.exports = {
     plugins: [new HtmlWebpackPlugin({
         title: 'Aaron A Anderson - Personal Site',
         template: 'src/index.ejs'
-    })],
+    }),
+    new BundleAnalyzerPlugin()
+    ],
     devServer: {
         compress: true,
         port: 3000,
-      }
+    }
 };

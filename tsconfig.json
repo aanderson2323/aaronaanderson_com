@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": false,
-    "jsx": "react",
     "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "noImplicitAny": false,
+    "outDir": "./dist/",
   },
   "exclude": [
     "**/*.test.*",
+    "node_modules",
   ]
 }
