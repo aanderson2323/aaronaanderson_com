@@ -10,6 +10,9 @@ export const NavBar = () => {
                 <Link to="/writing">Writing</Link>
             </li>
             <li>
+                <a href="https://www.linkedin.com/in/aaron-anderson-21230199/" target="_blank">CV (linkedIn)</a>
+            </li>
+            <li>
                 <Link to="/contact">Contact</Link>
             </li>
         </ul>
