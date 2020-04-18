@@ -1,5 +1,6 @@
 {
   "name": "aaronaanderson_com",
+  "sideEffects": false,
   "version": "0.1.0",
   "private": true,
   "devDependencies": {

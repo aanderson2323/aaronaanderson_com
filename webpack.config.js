@@ -9,6 +9,16 @@ module.exports = {
     devtool: "cheap-module-eval-source-map",
     optimization: {
         minimizer: [new TerserPlugin({ /* additional options here */ })],
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    chunks: "all",
+                    test: /node_modules/,
+                    name: "vendor"
+                },
+            },
+        },
+        usedExports: true,
     },
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
@@ -48,7 +58,7 @@ module.exports = {
         title: 'Aaron A Anderson - Personal Site',
         template: 'src/index.ejs'
     }),
-    new BundleAnalyzerPlugin()
+        new BundleAnalyzerPlugin()
     ],
     devServer: {
         compress: true,
