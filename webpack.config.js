@@ -1,12 +1,15 @@
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: "production",
 
     // Enable sourcemaps for debugging webpack's output.
     devtool: "cheap-module-eval-source-map",
-
+    optimization: {
+        minimizer: [new TerserPlugin({ /* additional options here */ })],
+    },
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
         extensions: [".ts", ".tsx", ".js", ".jsx"]
